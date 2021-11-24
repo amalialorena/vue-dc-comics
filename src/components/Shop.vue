@@ -49,17 +49,17 @@ export default {
                     margin: 0 10px;
                     height: 50%;
                     width: calc((100% / 5) - 20px);
-                        img {
-                            width: 20%;
-                            min-width: 30px;
-                        }
-                        p {
-                            display: inline-block;
-                            font-size: .8em;
-                            margin: 0 10px;
-                            vertical-align: middle;
-                            font-weight: bold;
-                        }
+                    img {
+                        width: 20%;
+                        min-width: 30px;
+                     }
+                    p {
+                        display: inline-block;
+                        font-size: .8em;
+                        margin: 0 10px;
+                        vertical-align: middle;
+                        font-weight: bold;
+                    }
                 }
            
         }

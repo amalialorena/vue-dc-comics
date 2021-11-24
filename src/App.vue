@@ -37,6 +37,7 @@ export default {
 main {
   background-color: black;
   color: white;
+  height: 100px;
 }
 
 .container {
