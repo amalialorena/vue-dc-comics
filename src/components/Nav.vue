@@ -39,8 +39,6 @@ export default {
             height: 70px;
             display: flex;
             justify-content: space-between;
-             width: 70%;
-            margin: 0 auto;
         }
         .logo {
             padding: 5px;

@@ -39,6 +39,11 @@ main {
   color: white;
 }
 
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 // RESET
  html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
