@@ -2,43 +2,32 @@
   <footer>
       <section class="content container">
           <div class="links">
+              <div class="column"> 
                 <ul>
-                  <li>
-                      <a href="#" class="title">DC COMICS</a>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
+                  <li v-for="(product,i) in products" :key="i">
+                      <a :href="product.link" :class="i===0? 'title': '' ">{{product.text}}</a>
                   </li>
-                  <li><a href="#" class="title">COMICS</a>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                    </li>
+                  </ul>
+                  <ul>
+                  <li v-for="(shop,i) in shops" :key="i">
+                      <a href="shop.link" :class="i===0? 'title': ''">{{shop.text}}</a> 
+                  </li>
                 </ul>
+              </div>
+              <div class="column">  
                 <ul>
-                    <li><a href="#" class="title">DC</a>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
+                    <li v-for="(object,i) in legal" :key="i">
+                      <a href="object.link" :class="i===0? 'title': ''">{{object.text}}</a>
                   </li>
                 </ul>    
+              </div>
+              <div class="column">
                 <ul>
-                    <li>
-                      <a href="#" class="title">DC</a>
-                      <p>lorem</p>
-                      <p>lorem</p>
-                      <p>lorem</p>
+                    <li v-for="(site,i) in sites" :key="i">
+                      <a href="site.link" :class="i===0? 'title': ''">{{site.text}}</a>
                   </li>
                 </ul>  
-    
+            </div>
           </div> 
           <div class="logo">
               <img src="../assets/img/dc-logo-bg.png" alt="">
@@ -63,6 +52,122 @@
 <script>
 export default {
   name: 'Footer', 
+  data () {
+      return {
+          products: [
+            { 
+               text: "DC COMICS",
+               link: "#"
+            },
+             { 
+               text:  "Characters",
+               link: "#"
+            },
+            { 
+               text:  "Comics",
+               link: "#"
+            }, 
+            { 
+               text:  "Movies",
+               link: "#"
+            }, 
+            { 
+               text:  "Tv",
+               link: "#"
+            },
+            { 
+               text: "Games",
+               link: "#"
+            },
+            { 
+               text: "Videos",
+               link: "#"
+            }, 
+            { 
+               text: "News",
+               link: "#"
+            }, 
+          ],
+          shops: [
+            { 
+               text: "Shop DC", 
+               link: "#"
+            },
+            { 
+               text: "SHOP",
+               link: "#"
+            },
+            { 
+               text: "Shop Collectibles",
+               link: "#"
+            }, 
+          ],
+          legal: [
+            { 
+               text: "DC",
+               link: "#"
+            },
+            { 
+               text: "Terms of use",
+               link: "#"
+            },
+            { 
+               text: "Add Choices",
+               link: "#"
+            },
+            { 
+               text: "Advertising",
+               link: "#"
+            },
+            { 
+               text: "Jobs",
+               link: "#"
+            },
+            { 
+               text: "Subscriptions",
+               link: "#"
+            },
+            { 
+               text: "CPSC Certificates",
+               link: "#"
+            },
+            { 
+               text: "Ratings",
+               link: "#"
+            },
+            { 
+               text: "Shop Help",
+               link: "#"
+            },
+            { 
+               text: "Contact Us",
+               link: "#"
+            },            
+          ],
+          sites: [
+            { 
+               text: "SITES",
+               link: "#"
+            },
+            { 
+               text: "MAD Magazine",
+               link: "#"
+            },
+            { 
+               text: "DC Kids",
+               link: "#"
+            },
+            { 
+               text: "DC Universe",
+               link: "#"
+            },
+            { 
+               text: "DC Power Visa",
+               link: "#"
+            },       
+          ]
+      }
+  }
 }
 </script>
 
@@ -81,7 +186,8 @@ export default {
                 overflow: hidden;
                 object-fit: cover;
                 img {
-                    height: 500px;
+                    max-width: 100%;
+                    margin-top: -70px;
                 }
             }
             .links {
@@ -90,14 +196,20 @@ export default {
                 width: 30%;
                 padding-top: 50px;
                 color:grey;
-                
+
                 ul a {
                     text-decoration: none;
+                    font-size: .7em;
+                    color: grey;
                 }
-                 ul li .title {
-                     color: white;
-                     margin: 10px 0;
-                 }
+                .title {
+                    color: white;
+                    margin: 10px 0;
+                    font-weight: bold;
+                    font-size: .9em;
+                    display: block;
+                }
+                
             }
             
         }
@@ -114,13 +226,15 @@ export default {
                     margin: 30px;
                     background-color: #242424;
                     color: white;
+                    place-self: center;
+                    padding: 10px;
                 }
             }
 
             .social {
                 display:flex;
                 align-items: center;
-                p{
+                p {
                     display: inline-block;
                     color:#0c6bfb;
                     font-weight: bold;
@@ -132,7 +246,6 @@ export default {
                 }
             }
         }
-
     }
 
 </style>

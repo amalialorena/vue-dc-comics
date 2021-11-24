@@ -45,6 +45,10 @@ main {
   margin: 0 auto;
 }
 
+body {
+  min-width: 1400px;
+}
+
 // RESET
  html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
