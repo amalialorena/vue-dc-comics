@@ -44,20 +44,22 @@ export default {
             align-items: center;
             height: 100%;
                 .card {
-                margin: 0 10px;
-                height: 50%;
-                width: calc((100% / 5) - 20px);
-                    img {
-                        width: 20%;
-                        min-width: 30px;
-                     }
-                    p {
-                        display: inline-block;
-                        font-size: .8em;
-                        margin: 0 10px;
-                        vertical-align: middle;
-                        font-weight: bold;
-                    }
+                    display: flex;
+                    align-items: center;
+                    margin: 0 10px;
+                    height: 50%;
+                    width: calc((100% / 5) - 20px);
+                        img {
+                            width: 20%;
+                            min-width: 30px;
+                        }
+                        p {
+                            display: inline-block;
+                            font-size: .8em;
+                            margin: 0 10px;
+                            vertical-align: middle;
+                            font-weight: bold;
+                        }
                 }
            
         }
