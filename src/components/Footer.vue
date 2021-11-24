@@ -89,6 +89,8 @@ export default {
                 justify-content: space-between;
                 width: 30%;
                 padding-top: 50px;
+                color:grey;
+                
                 ul a {
                     text-decoration: none;
                 }

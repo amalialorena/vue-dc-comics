@@ -5,21 +5,10 @@
             <img src="../assets/img/dc-logo.png" alt="logo">
          </div>
             <ul>
-                <li>
-                    <a href="#">Character</a>
+                <li v-for="(link, i) in links" :key="i" :class="link.status? 'active' : ''">
+                    <a href="#">{{link.text.toUpperCase()}}</a>
                 </li>
-                <li>
-                    <a href="#">Character</a>
-                </li>
-                <li>
-                    <a href="#">Character</a>
-                </li>
-                <li>
-                    <a href="#">Character</a>
-                </li>
-                <li>
-                    <a href="#">Character</a>
-                </li>
+             
             </ul>
       </div>
   </nav>
@@ -29,6 +18,56 @@
 <script>
 export default {
   name: 'Nav',  
+  data() {
+      return {
+          links:[
+              {
+                  text:"characters",
+                  status: false
+              },
+              {
+                  text:"comics",
+                  status: true
+              },
+              {
+                  text:"movies",
+                  status: false
+              },
+              {
+                  text:"tv",
+                  status: false
+              },
+              {
+                  text:"games",
+                  status: false
+              },
+              {
+                  text:"collectibles",
+                  status: false
+              },
+              {
+                  text:"videos",
+                  status: false
+              },
+              {
+                  text:"fans",
+                  status: false
+              },
+              {
+                  text:"news",
+                  status: false
+              },
+              {
+                  text:"shop",
+                  status: false
+              }
+              
+            ]
+      }
+  }
+
+  
+
 }
 </script>
 
@@ -46,13 +85,20 @@ export default {
         img {
             height: 100%;
         }
+        .active a {
+            color: blue;
+            border-bottom:  3px solid blue;
+            padding-bottom: 25px;
+        }
         li {
-            // vertical-align: middle;
             display: inline-block;
-            margin: 0 20px;
+            margin: 0 10px;
             line-height: 70px;
             a {
                 text-decoration: none;
+                font-size: .7em;
+                color: black;
+                font-weight: bold;
             }
         }
     }

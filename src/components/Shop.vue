@@ -1,25 +1,9 @@
 <template>
   <section>
       <div class="container">
-          <div class="card">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <p>DIGITAL COMICS</p>
-          </div>
-          <div class="card">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <p>DIGITAL COMICS</p>
-          </div>
-          <div class="card">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <p>DIGITAL COMICS</p>
-          </div>
-          <div class="card">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <p>DIGITAL COMICS</p>
-          </div>
-          <div class="card">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <p>DIGITAL COMICS</p>
+          <div class="card" v-for="(card, i) in cards" :key="i">
+              <img :src="require(`../assets/img/${card.image}`)" alt="" />
+              <p>{{card.text}}</p>
           </div>
       </div>
   </section>
@@ -28,6 +12,33 @@
 <script>
 export default {
   name: 'Shop', 
+  data() {
+      return {
+        cards:[
+            {
+            "text": "Digital Comics",
+            "image": "buy-comics-digital-comics.png"
+            },
+            {
+            "text": "DC Merchandise",
+            "image": "buy-comics-merchandise.png"
+            },
+            {
+            "text": "Subscriptions",
+            "image": "buy-comics-subscriptions.png"
+            },
+            {
+            "text": "Comic Shop Locator",
+            "image": "buy-comics-shop-locator.png"
+            },
+            {
+            "text": "DC Power Visa",
+            "image": "buy-dc-power-visa.svg"
+            },
+        ]
+      }
+  }
+
 }
 </script>
 
