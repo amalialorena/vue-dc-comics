@@ -115,12 +115,14 @@ export default {
                 flex-wrap: wrap;
                 .series {
                     background-color: #0d69f6;
-                    height: 50px;
-                    line-height: 50px;
+                    height: 45px;
+                    line-height: 45px;
                     padding: 0 20px;
                     color: white; 
                     font-weight: bold; 
                     font-size: 1.3em; 
+                    position: absolute;
+                    margin: -45px;
                 }
             }
             .cta {
@@ -133,7 +135,7 @@ export default {
                     color: white;
                     font-weight: bold;
                     border: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 20px;   
                 }
             }
         }
