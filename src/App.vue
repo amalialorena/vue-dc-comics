@@ -2,7 +2,8 @@
   <div id="app">
     <Nav/>
     <main>
-     Content goes here 
+    <Jumbotron/>
+    <Comics/>
     </main>
     <Shop/>
     <Footer/>
@@ -11,16 +12,21 @@
 
 <script>
 import Nav from './components/Nav.vue';
+import Jumbotron from './components/Jumbotron.vue';
+import Comics from './components/Comics.vue';
 import Shop from './components/Shop.vue';
-import Footer from './components/Footer.vue'
+import Footer from './components/Footer.vue';
 
 
 export default {
   name: 'App',
   components: {
     Nav,
+    Jumbotron,
+    Comics,
     Shop,
-    Footer
+    Footer,
+
   }
 }
 </script>

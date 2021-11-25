@@ -60,6 +60,7 @@ export default {
                     margin: 0 10px;
                     height: 50%;
                     width: calc((100% / 5) - 20px);
+                    max-width: 150px;
                     img {
                         width: 20%;
                         min-width: 30px;
