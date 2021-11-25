@@ -1,7 +1,7 @@
 <template>
-    <section id="jumbo-container">
+    <header id="jumbo-container">
         <img src="../assets/img/jumbotron.jpg" alt="">
-    </section>
+    </header>
 </template>
 
 <script>

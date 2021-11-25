@@ -8,7 +8,6 @@
                 <li v-for="(link, i) in links" :key="i" :class="link.status? 'active' : ''">
                     <a href="#">{{link.text.toUpperCase()}}</a>
                 </li>
-             
             </ul>
       </div>
   </nav>

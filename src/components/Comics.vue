@@ -6,6 +6,9 @@
             :img="comic.thumb" 
             :title="comic.series"/>
       </div>
+      <div class="cta">
+          <button>LOAD MORE</button>
+      </div>
   </section>
 </template>
 
@@ -107,6 +110,19 @@ export default {
                 padding: 20px 0;
                 display: flex;
                 flex-wrap: wrap;
+            }
+            .cta {
+                text-align: center;
+                button {
+                    margin: 0 auto;
+                    background-color: #0d69f6;
+                    padding: 10px 30px;
+                    font-size: .7em;
+                    color: white;
+                    font-weight: bold;
+                    border: 0;
+                    margin-bottom: 20px;
+                }
             }
         }
        
