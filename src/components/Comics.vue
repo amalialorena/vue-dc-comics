@@ -1,6 +1,9 @@
 <template>
   <section >
       <div id="comics-container" class="container">
+          <div class="series">
+              CURRENT SERIES
+          </div>
           <Comic v-for="comic,i in comics" 
             :key="i"
             :img="comic.thumb" 
@@ -110,6 +113,15 @@ export default {
                 padding: 20px 0;
                 display: flex;
                 flex-wrap: wrap;
+                .series {
+                    background-color: #0d69f6;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0 20px;
+                    color: white; 
+                    font-weight: bold; 
+                    font-size: 1.3em; 
+                }
             }
             .cta {
                 text-align: center;
