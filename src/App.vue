@@ -40,12 +40,6 @@ export default {
   // color: #2c3e50;
 }
 
-main {
-  background-color: black;
-  color: white;
-  height: 100px;
-}
-
 .container {
   width: 70%;
   margin: 0 auto;

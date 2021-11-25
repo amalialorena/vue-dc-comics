@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import Comic from './components/Comic.vue';
+import Comic from '../components/Comic.vue';
 
 export default {
   name: 'Comics',
   components: {
       Comic,
   },
-  
+
   props: {
     msg: String
   }
