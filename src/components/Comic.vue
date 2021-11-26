@@ -21,17 +21,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     .card {
-        width: calc((100% / 6) - 20px);
-        margin: 20px 10px;
+        // width: calc((100% / 6) - 20px);
+        // margin: 20px 10px;
+        width: 154px;
+        height: 230px;
+        margin: 1%;
         .img-container {
-            height: 180px;
+            height: 154px;
             overflow: hidden;
             img {
             width: 100%;
-            // min-height: 200px;
             }
         }
-        
         p {
             margin-top: 15px;
             color: white;

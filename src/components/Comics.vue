@@ -108,11 +108,14 @@ export default {
         <!-- Add "scoped" attribute to limit CSS to this component only -->
         <style scoped lang="scss">
         section {
+            min-width: 1500px;
             background-color: #151515;
+            position: relative;
              #comics-container {
-                padding: 20px 0;
+                padding-top: 40px;
                 display: flex;
                 flex-wrap: wrap;
+                position: relative;
                 .series {
                     background-color: #0d69f6;
                     height: 45px;
@@ -122,7 +125,8 @@ export default {
                     font-weight: bold; 
                     font-size: 1.3em; 
                     position: absolute;
-                    margin: -45px;
+                    left: 0;
+                    top: -22px;
                 }
             }
             .cta {

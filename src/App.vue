@@ -46,7 +46,7 @@ export default {
 }
 
 body {
-  min-width: 1400px;
+  min-width: 1500px;
 }
 
 // RESET
